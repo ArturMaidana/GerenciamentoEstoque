@@ -5,15 +5,15 @@ import 'package:stock_management/widgets/CardSearch.dart';
 import 'package:stock_management/widgets/NavBar.dart';
 import 'package:stock_management/widgets/Services_widget.dart';
 
-class Services extends StatelessWidget {
-  const Services({super.key});
+class ServicesWidget extends StatelessWidget {
+  const ServicesWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Serviços'),
-        backgroundColor: Color.fromARGB(255, 5, 64, 172),
+        backgroundColor: const Color.fromARGB(255, 14, 61, 116),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

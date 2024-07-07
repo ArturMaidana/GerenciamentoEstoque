@@ -63,8 +63,12 @@ flutter:
     - assets/image/estoque_icon.png
     - assets/image/add_icon.png
     - assets/image/Agenda_icon.png
+    - assets/image/config_icon.png
     - assets/image/cilindro.png
+    - assets/image/estoque_icon.png
+    - assets/image/Solicitacoes_icon.png
     - assets/image/doc_icon.png
+    - assets/image/config_icon.png
     - assets/image/Equipe_icon.png
     - assets/image/Produtos_icon.png
     - assets/image/Relatorios_icon.png
