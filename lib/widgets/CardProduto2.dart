@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Cardcilindro extends StatelessWidget {
-  const Cardcilindro({super.key});
+class Cardproduto2 extends StatelessWidget {
+  const Cardproduto2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Cardcilindro extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Image.asset(
-                'assets/image/cilindro.png', // Caminho da sua imagem
+                'assets/image/Produto2.png', // Caminho da sua imagem
                 width: 80,
                 height: 80,
               ),

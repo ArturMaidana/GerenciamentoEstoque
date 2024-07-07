@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stock_management/pages/LoginPage.dart';
+import 'package:stock_management/pages/ProfilePage.dart';
+import 'package:stock_management/pages/ServicesPae.dart';
 import 'package:stock_management/pages/homePage.dart';
 
 class AppWidget extends StatelessWidget {
@@ -17,6 +19,8 @@ class AppWidget extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(),
         '/home': (context) => HomePage(),
+        '/services': (context) => Services(),
+        '/profile': (context) => Profilepage(),
       },
     );
   }

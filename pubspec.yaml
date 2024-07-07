@@ -69,6 +69,11 @@ flutter:
     - assets/image/Produtos_icon.png
     - assets/image/Relatorios_icon.png
     - assets/image/search_icon.png
+    - assets/image/Produto2.png
+    - assets/image/produto3.png
+    - assets/image/Home_icon.png
+    - assets/image/Dashboard_icon.png
+    - assets/image/Profile_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

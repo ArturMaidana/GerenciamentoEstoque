@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/CardCilindro.dart';
-import 'package:stock_management/widgets/CardProduto2.dart';
-import 'package:stock_management/widgets/CardProduto3.dart';
-import 'package:stock_management/widgets/CardProdutos.dart';
-import 'package:stock_management/widgets/CardRelatorios.dart';
-import 'package:stock_management/widgets/CardSearch.dart';
 import 'package:stock_management/widgets/NavBar.dart';
-import 'package:stock_management/widgets/custom_Card.dart';
-import 'package:stock_management/widgets/custom_topBar.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class Services extends StatelessWidget {
+  const Services({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +23,17 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const SizedBox(height: 80),
-            const Padding(padding: EdgeInsets.all(20), child: CustomTopbar()),
-            const SizedBox(height: 20),
+            const Padding(
+              padding: EdgeInsets.all(10),
+            ),
+            const SizedBox(height: 10),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60),
+                    topLeft: Radius.circular(0),
+                    topRight: Radius.circular(0),
                   ),
                 ),
                 child: Column(
@@ -50,24 +44,13 @@ class HomePage extends StatelessWidget {
                     const Row(
                       mainAxisAlignment: MainAxisAlignment
                           .spaceEvenly, // Espalha os cards uniformemente
-                      children: [
-                        CardProdutos(),
-                        CardSearh(),
-                        CardRelatorios(),
-                      ],
                     ),
                     const SizedBox(height: 10),
-                    const CustomCard(),
                     const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Cardcilindro(),
-                        Cardproduto2(),
-                        Cardproduto3(),
-                      ],
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 570,
                     ),
                     Center(child: Navbar()),
 
