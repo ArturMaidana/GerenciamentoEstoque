@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const SizedBox(height: 80),
+            const SizedBox(height: 40),
             const Padding(padding: EdgeInsets.all(20), child: CustomTopbar()),
             const SizedBox(height: 20),
             Expanded(
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 60,
                     ),
                     Center(child: Navbar()),
 

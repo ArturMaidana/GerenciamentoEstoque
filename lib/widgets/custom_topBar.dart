@@ -12,11 +12,11 @@ class CustomTopbar extends StatelessWidget {
           height: 70,
           child: Image.asset('assets/image/user.png'),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
           width: 10,
         ),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
@@ -35,10 +35,10 @@ class CustomTopbar extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           width: 120,
         ),
-        Icon(
+        const Icon(
           Icons.notifications,
           color: Colors.white,
         ),
