@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stock_management/pages/LoginPage.dart';
+import 'package:stock_management/pages/Logintest.dart';
 import 'package:stock_management/pages/ProfilePage.dart';
 import 'package:stock_management/pages/ServicesPae.dart';
 import 'package:stock_management/pages/homePage.dart';
@@ -21,6 +22,7 @@ class AppWidget extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/services': (context) => Services(),
         '/profile': (context) => Profilepage(),
+        '/teste': (context) => LoginTest(),
       },
     );
   }

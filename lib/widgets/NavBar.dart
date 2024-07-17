@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
@@ -6,8 +7,8 @@ class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        elevation: 5,
-        color: Color.fromARGB(255, 31, 31, 36),
+        elevation: 10,
+        color: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -18,36 +19,23 @@ class Navbar extends StatelessWidget {
           child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
+                IconButton(
+                    onPressed: () {}, icon: FaIcon(FontAwesomeIcons.home)),
                 InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/home');
-                  },
-                  child: Image.asset(
-                    'assets/image/Home_icon.png', // Caminho da sua imagem
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    child: const Icon(Icons.home)),
                 InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/services');
-                  },
-                  child: Image.asset(
-                    'assets/image/Dashboard_icon.png', // Caminho da sua imagem
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/services');
+                    },
+                    child: const Icon(Icons.search)),
                 InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/profile');
-                  },
-                  child: Image.asset(
-                    'assets/image/Profile_icon.png', // Caminho da sua imagem
-                    width: 50,
-                    height: 50,
-                  ),
-                ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/profile');
+                    },
+                    child: const Icon(Icons.person)),
               ]),
         ));
   }

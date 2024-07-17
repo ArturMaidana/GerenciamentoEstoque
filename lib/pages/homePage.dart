@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 60,
+                      height: 35,
                     ),
                     Center(child: Navbar()),
 

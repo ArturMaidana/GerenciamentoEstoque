@@ -50,7 +50,7 @@ class Profilepage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     ),
                     SizedBox(
-                      height: 570,
+                      height: 500,
                     ),
                     Center(child: Navbar()),
 
