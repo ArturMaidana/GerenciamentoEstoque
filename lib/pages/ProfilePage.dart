@@ -52,7 +52,6 @@ class Profilepage extends StatelessWidget {
                     SizedBox(
                       height: 500,
                     ),
-                    Center(child: Navbar()),
 
                     Expanded(child: Container()),
 

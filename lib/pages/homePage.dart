@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/CardCilindro.dart';
 import 'package:stock_management/widgets/CardProduto2.dart';
 import 'package:stock_management/widgets/CardProduto3.dart';
 import 'package:stock_management/widgets/CardProdutos.dart';
-import 'package:stock_management/widgets/CardRelatorios.dart';
-import 'package:stock_management/widgets/CardSearch.dart';
+
 import 'package:stock_management/widgets/NavBar.dart';
+import 'package:stock_management/widgets/Search.dart';
 import 'package:stock_management/widgets/custom_Card.dart';
 import 'package:stock_management/widgets/custom_topBar.dart';
+// ... other imports
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -34,50 +34,43 @@ class HomePage extends StatelessWidget {
             const Padding(padding: EdgeInsets.all(20), child: CustomTopbar()),
             const SizedBox(height: 20),
             Expanded(
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60),
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    const SizedBox(
-                        height:
-                            30), // Ajuste esta altura para mover os cards para cima
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment
-                          .spaceEvenly, // Espalha os cards uniformemente
-                      children: [
-                        CardProdutos(),
-                        CardSearh(),
-                        CardRelatorios(),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    const CustomCard(),
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Cardcilindro(),
-                        Cardproduto2(),
-                        Cardproduto3(),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 35,
-                    ),
-                    Center(child: Navbar()),
-
-                    Expanded(child: Container()),
-
-                    // Isso empurra os cards para cima
-                  ],
+                child: Container(
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
                 ),
               ),
-            ),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  const Search(),
+                  const CustomCard(),
+                  const CardProdutos(),
+                  const SizedBox(height: 10),
+                  Container(
+                    alignment: Alignment.bottomLeft,
+                    child: const Text(
+                      'Produtos Especiais',
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Row(
+                    children: [Cardproduto2(), Cardproduto3(), Cardproduto2()],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Navbar(
+                    onItemSelected: (int) {},
+                  ),
+                ],
+              ),
+            )),
           ],
         ),
       ),

@@ -75,7 +75,6 @@ class Services extends StatelessWidget {
           // Adicione a Navbar abaixo dos ícones, mas antes do fundo da tela
           const Padding(
             padding: EdgeInsets.all(8.0), // Ajusta a margem da Navbar
-            child: Navbar(), // Adicione a Navbar aqui
           ),
         ],
       ),

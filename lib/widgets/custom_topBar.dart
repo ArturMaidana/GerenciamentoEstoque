@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 
 class CustomTopbar extends StatelessWidget {
   const CustomTopbar({super.key});
@@ -8,8 +10,8 @@ class CustomTopbar extends StatelessWidget {
     return Row(
       children: <Widget>[
         Container(
-          width: 70,
-          height: 70,
+          width: 50,
+          height: 50,
           child: Image.asset('assets/image/user.png'),
         ),
         const SizedBox(
@@ -20,27 +22,55 @@ class CustomTopbar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Bem-vindo(a)",
+              "Bem-vindom, Krish",
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w100),
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold),
             ),
             Text(
-              "Samuel Kaio",
+              "Cuiabá, Mato Grosso",
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold),
+                  fontSize: 15,
+                  fontWeight: FontWeight.w100),
             ),
           ],
         ),
         const SizedBox(
-          width: 120,
+          width: 66,
         ),
-        const Icon(
-          Icons.notifications,
-          color: Colors.white,
+        Row(
+          children: [
+            Card(
+              color: const Color.fromARGB(255, 230, 244, 248),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const SizedBox(
+                height: 35,
+                width: 35,
+                child: Icon(
+                  Iconsax.notification,
+                  size: 25,
+                ),
+              ),
+            ),
+            Card(
+              color: const Color.fromARGB(255, 230, 244, 248),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const SizedBox(
+                height: 35,
+                width: 35,
+                child: Icon(
+                  Ionicons.menu_outline,
+                  size: 25,
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );
