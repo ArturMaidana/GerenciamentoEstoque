@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
@@ -42,33 +43,40 @@ class HomePage extends StatelessWidget {
                   topRight: Radius.circular(60),
                 ),
               ),
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const Search(),
-                  const CustomCard(),
-                  const CardProdutos(),
-                  const SizedBox(height: 10),
-                  Container(
-                    alignment: Alignment.bottomLeft,
-                    child: const Text(
-                      'Produtos Especiais',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 30,
                     ),
-                  ),
-                  const Row(
-                    children: [Cardproduto2(), Cardproduto3(), Cardproduto2()],
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Navbar(
-                    onItemSelected: (int) {},
-                  ),
-                ],
+                    const Search(),
+                    const CustomCard(),
+                    const CardProdutos(),
+                    const SizedBox(height: 10),
+                    Container(
+                      alignment: Alignment.bottomLeft,
+                      child: const Text(
+                        '  Produtos Especiais',
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Cardproduto2(),
+                        Cardproduto3(),
+                        Cardproduto2()
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Navbar(
+                      onItemSelected: (int) {},
+                    ),
+                  ],
+                ),
               ),
             )),
           ],

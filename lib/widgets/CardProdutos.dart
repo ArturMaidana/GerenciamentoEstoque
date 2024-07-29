@@ -8,7 +8,7 @@ class CardProdutos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
+    return Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
       Card(
         elevation: 5,
         color: const Color.fromARGB(255, 255, 255, 255),
@@ -16,14 +16,14 @@ class CardProdutos extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
-          width: 70,
-          height: 60,
+          width: 65,
+          height: 55,
           padding: const EdgeInsets.all(10),
           child: const Column(
             children: <Widget>[
               Icon(
                 Ionicons.cart_sharp,
-                size: 35,
+                size: 30,
               ),
               // Espaço vertical entre a imagem e o texto
             ],
@@ -37,14 +37,14 @@ class CardProdutos extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
-          width: 70,
-          height: 60,
+          width: 65,
+          height: 55,
           padding: const EdgeInsets.all(10),
           child: const Column(
             children: <Widget>[
               Icon(
                 Ionicons.document_attach_sharp,
-                size: 35,
+                size: 30,
               ),
               // Espaço vertical entre a imagem e o texto
             ],
@@ -58,14 +58,14 @@ class CardProdutos extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
-          width: 70,
-          height: 60,
+          width: 65,
+          height: 55,
           padding: const EdgeInsets.all(10),
           child: const Column(
             children: <Widget>[
               Icon(
                 Ionicons.logo_wechat,
-                size: 35,
+                size: 30,
               ),
               // Espaço vertical entre a imagem e o texto
             ],
@@ -79,14 +79,14 @@ class CardProdutos extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
-          width: 70,
-          height: 60,
+          width: 65,
+          height: 55,
           padding: const EdgeInsets.all(10),
           child: const Column(
             children: <Widget>[
               Icon(
                 Ionicons.calendar,
-                size: 35,
+                size: 30,
               ),
               // Espaço vertical entre a imagem e o texto
             ],
@@ -100,14 +100,14 @@ class CardProdutos extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Container(
-          width: 70,
-          height: 60,
+          width: 65,
+          height: 55,
           padding: const EdgeInsets.all(10),
           child: const Column(
             children: <Widget>[
               Icon(
                 Ionicons.settings,
-                size: 35,
+                size: 30,
               ),
               // Espaço vertical entre a imagem e o texto
             ],

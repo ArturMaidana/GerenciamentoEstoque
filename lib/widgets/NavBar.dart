@@ -29,7 +29,7 @@ class _NavbarState extends State<Navbar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _buildNavItem(Iconsax.home1, 0),
+            _buildNavItem(Iconsax.home, 0),
             _buildNavItem(Iconsax.search_favorite, 1),
             _buildNavItem(Iconsax.add_square, 2),
             _buildNavItem(Iconsax.message, 3),
