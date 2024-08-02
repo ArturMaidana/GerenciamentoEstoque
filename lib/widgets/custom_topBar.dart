@@ -22,7 +22,7 @@ class CustomTopbar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Bem-vindom, Krish",
+              "Bem-vindo, Krish",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 15,
