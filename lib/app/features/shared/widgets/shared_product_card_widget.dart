@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconoir_ttf/flutter_iconoir_ttf.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
 
-class CardProdutos extends StatelessWidget {
-  const CardProdutos({super.key});
+class SharedProductCardWidget extends StatelessWidget {
+  const SharedProductCardWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

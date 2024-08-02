@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconoir_ttf/flutter_iconoir_ttf.dart';
 import 'package:iconsax/iconsax.dart';
 
-class Navbar extends StatefulWidget {
+class SharedNavbarWidget extends StatefulWidget {
   final Function(int) onItemSelected;
 
-  const Navbar({super.key, required this.onItemSelected});
+  const SharedNavbarWidget({super.key, required this.onItemSelected});
 
   @override
-  State<Navbar> createState() => _NavbarState();
+  State<SharedNavbarWidget> createState() => _SharedNavbarWidgetState();
 }
 
-class _NavbarState extends State<Navbar> {
+class _SharedNavbarWidgetState extends State<SharedNavbarWidget> {
   int _selectedIndex = 0;
 
   @override

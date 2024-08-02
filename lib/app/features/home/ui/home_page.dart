@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/CardProduto2.dart';
-import 'package:stock_management/widgets/CardProduto3.dart';
-import 'package:stock_management/widgets/CardProdutos.dart';
+import 'package:stock_management/app/features/shared/widgets/shared_custom_card_widget.dart';
+import 'package:stock_management/app/features/shared/widgets/shared_product_card_widget.dart';
 
-import 'package:stock_management/widgets/NavBar.dart';
-import 'package:stock_management/widgets/Search.dart';
-import 'package:stock_management/widgets/custom_Card.dart';
-import 'package:stock_management/widgets/custom_topBar.dart';
+import 'package:stock_management/app/features/shared/widgets/shared_navbar_widget.dart';
+import 'package:stock_management/app/features/shared/widgets/shared_search_widget.dart';
+import 'package:stock_management/app/features/home/ui/widgets/home_topbar_widget.dart';
 // ... other imports
 
 class HomePage extends StatelessWidget {
@@ -32,7 +30,8 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const SizedBox(height: 40),
-            const Padding(padding: EdgeInsets.all(20), child: CustomTopbar()),
+            const Padding(
+                padding: EdgeInsets.all(20), child: HomeTopBarWidget()),
             const SizedBox(height: 20),
             Expanded(
                 child: Container(
@@ -49,9 +48,9 @@ class HomePage extends StatelessWidget {
                     const SizedBox(
                       height: 30,
                     ),
-                    const Search(),
-                    const CustomCard(),
-                    const CardProdutos(),
+                    const SharedSearchWidget(),
+                    const SharedCustomCardWidget(),
+                    const SharedProductCardWidget(),
                     const SizedBox(height: 10),
                     Container(
                       alignment: Alignment.bottomLeft,
@@ -64,15 +63,15 @@ class HomePage extends StatelessWidget {
                     const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Cardproduto2(),
-                        Cardproduto3(),
-                        Cardproduto2()
+                        // Cardproduto2(),
+                        // Cardproduto3(),
+                        // Cardproduto2()
                       ],
                     ),
                     const SizedBox(
                       height: 20,
                     ),
-                    Navbar(
+                    SharedNavbarWidget(
                       onItemSelected: (int) {},
                     ),
                   ],

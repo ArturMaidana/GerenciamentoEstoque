@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class CardSearh extends StatelessWidget {
-  const CardSearh({super.key});
+class SharedCardSearchWidget extends StatelessWidget {
+  const SharedCardSearchWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,15 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:stock_management/app/core/infraestructure/routes/routes.dart';
+import 'package:stock_management/app/core/utils/consts/path_of_assets.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class AuthPage extends StatefulWidget {
+  const AuthPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<AuthPage> createState() => _AuthPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _AuthPageState extends State<AuthPage> {
   String user = '';
   String password = '';
 
@@ -29,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     height: 100,
                     width: 100,
-                    child: Image.asset("assets/image/empilhadeira.png"),
+                    child: Image.asset(PathOfAssets.EMPILHADEIRA),
                   ),
                   Container(height: 30),
                   Text(
@@ -69,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         {
                           print("Login Aceito");
-                          Navigator.of(context).pushReplacementNamed('/home');
+                          context.pushReplacementNamed(Routes.HOME);
                         }
                       },
                       child: Container(

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/NavBar.dart';
 
-class Profilepage extends StatelessWidget {
-  const Profilepage({super.key});
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {

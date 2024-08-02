@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class Search extends StatelessWidget {
-  const Search({super.key});
+class SharedSearchWidget extends StatelessWidget {
+  const SharedSearchWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

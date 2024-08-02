@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/CardProdutos.dart';
-import 'package:stock_management/widgets/CardRelatorios.dart';
-import 'package:stock_management/widgets/CardSearch.dart';
-import 'package:stock_management/widgets/NavBar.dart';
-import 'package:stock_management/widgets/Services_widget.dart';
 
-class ServicesWidget extends StatelessWidget {
-  const ServicesWidget({super.key});
+class ServicesPage extends StatelessWidget {
+  const ServicesPage({super.key});
 
   @override
   Widget build(BuildContext context) {

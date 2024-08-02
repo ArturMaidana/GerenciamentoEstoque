@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stock_management/widgets/app_widget.dart';
+import 'package:stock_management/app/app_widget.dart';
 
-void main() {
-  runApp(AppWidget());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    const AppWidget(),
+  );
 }

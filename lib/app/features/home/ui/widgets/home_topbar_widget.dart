@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ionicons/ionicons.dart';
 
-class CustomTopbar extends StatelessWidget {
-  const CustomTopbar({super.key});
+class HomeTopBarWidget extends StatelessWidget {
+  const HomeTopBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

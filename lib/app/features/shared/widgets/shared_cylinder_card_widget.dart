@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Cardcilindro extends StatelessWidget {
-  const Cardcilindro({super.key});
+class SharedCardCilindroWidget extends StatelessWidget {
+  const SharedCardCilindroWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

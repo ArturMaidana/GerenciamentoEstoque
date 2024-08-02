@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class CardRelatorios extends StatelessWidget {
-  const CardRelatorios({super.key});
+class SharedReportCardWidget extends StatelessWidget {
+  const SharedReportCardWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
